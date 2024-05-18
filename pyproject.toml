@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "lab2.19"
+version = "0.0.1"
+description = ""
+authors = ["magdaevdalambek <you@example.com>"]
+license = "MIT LECENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.18"
+pre-commit = "^3.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+black = "^24.3.0"
+
+[tool.black]
+line-length = 79
+exclude = '''
+(
+    __pycache__
+)
+'''
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
